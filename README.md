@@ -1,6 +1,5 @@
 # CALCULADORA DE DESPESAS PESSOAIS:
-### Objetivo:  Criar uma aplicação que permita cadastrar várias despesas e
-gerar um resumo dos gastos.
+### Objetivo:  Criar uma aplicação que permita cadastrar várias despesas e gerar um resumo dos gastos.
 
 ### Requesistos:
 • Disponibilizar um menu interativo (via prompt) com opções para
