@@ -3,7 +3,14 @@ let despesas = [];
 
 function cadastroDespesa() {
     let categoria = prompt("Digite a categoria (Alimentação, Transporte...):");
+    categoria = categoria.charAt(0).toUpperCase() + categoria.slice(1).toLowerCase();
     let valor = parseFloat(prompt("Digite o valor:"));
+
+    let verificaCategoria = despesas.some(item => item[0] === categoria);
+    if (verificaCategoria) {
+            alert("Despesa ja cadastrada anteriormente!");
+            return;
+        }
 
     if (valor < 0) {
         alert("Valor é negativo!");
@@ -48,6 +55,7 @@ function limparDespesas() {
 let opcao = "";
 
 function menu() {
+    alert("Bem-vindo à Calculadora de Despesas Pessoais!\n Abra o console para ver as mensagens!");
     while (opcao !== 4) {
         opcao = Number(prompt("Calculadora de Despesas Pessoais! \n" +
             "Escolha a sua opção: \n" +
