@@ -10,9 +10,14 @@ function cadastroDespesa() {
     if (verificaCategoria) {
             alert("Despesa ja cadastrada anteriormente!");
             return;
-        }
+        } 
 
-    if (valor < 0) {
+    if (!categoria) {
+        alert("Categoria inválida!");
+        return;
+    }
+
+    if (valor < 0 | isNaN(valor)) {
         alert("Valor é negativo!");
         return;
     }
@@ -52,7 +57,7 @@ function limparDespesas() {
 
 };
 
-let opcao = "";
+let opcao = 0;
 
 function menu() {
     alert("Bem-vindo à Calculadora de Despesas Pessoais!\n Abra o console para ver as mensagens!");

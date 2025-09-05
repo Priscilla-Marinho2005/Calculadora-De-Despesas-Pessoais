@@ -12,7 +12,6 @@ e valor.
     - Lista de todas as despesas cadastradas.
     - Valor total gasto.
     - Valor médio das despesas.
-    - Maior despesa cadastrada.
 
 ### Conceitos para usar: 
 - Variáveis e constantes para armazenar valores.
