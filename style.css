@@ -6,11 +6,9 @@ body {
 }
 
 h1 {
+    font-weight: 700;
     text-align: center;
     padding: 20px;
-    font-family: "Libertinus Keyboard", system-ui;
-    font-weight: 400;
-    font-style: normal;
     color: #7B1E7A;
 }
 
@@ -22,4 +20,24 @@ h2 {
 
 p {
     margin-left: 25px;
+}
+
+button{
+    background-color: #7B1E7A;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao {
+    text-align: right;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #50004e;
 }

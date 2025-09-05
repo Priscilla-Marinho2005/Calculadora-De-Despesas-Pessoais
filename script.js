@@ -6,18 +6,18 @@ function cadastroDespesa() {
     categoria = categoria.charAt(0).toUpperCase() + categoria.slice(1).toLowerCase();
     let valor = parseFloat(prompt("Digite o valor:"));
 
+    if (!categoria) {
+        alert("Categoria inválida!");
+        return;
+    }
+
     let verificaCategoria = despesas.some(item => item[0] === categoria);
     if (verificaCategoria) {
             alert("Despesa ja cadastrada anteriormente!");
             return;
         } 
 
-    if (!categoria) {
-        alert("Categoria inválida!");
-        return;
-    }
-
-    if (valor < 0 | isNaN(valor)) {
+    if (valor < 0 || isNaN(valor)) {
         alert("Valor é negativo!");
         return;
     }
@@ -89,5 +89,3 @@ function menu() {
         };
     };
 };
-
-menu()
