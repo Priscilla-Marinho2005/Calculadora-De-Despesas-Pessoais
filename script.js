@@ -57,10 +57,11 @@ function limparDespesas() {
 
 };
 
-let opcao = 0;
 
 function menu() {
     alert("Bem-vindo à Calculadora de Despesas Pessoais!\n Abra o console para ver as mensagens!");
+    
+    let opcao = 0;
     while (opcao !== 4) {
         opcao = Number(prompt("Calculadora de Despesas Pessoais! \n" +
             "Escolha a sua opção: \n" +
@@ -89,5 +90,3 @@ function menu() {
         };
     };
 };
-
-document.getElementById("iniciar").addEventListener("click", menu);
