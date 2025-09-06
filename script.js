@@ -89,3 +89,5 @@ function menu() {
         };
     };
 };
+
+document.getElementById("iniciar").addEventListener("click", menu);
